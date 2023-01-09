@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_french_app"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <Button
+        android:backgroundTint="@color/green"
+        android:id="@+id/btnGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="handleColorButtonClick"
+        android:tag="green"
+        android:text="@string/green"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnRed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnRed"
+        app:layout_constraintTop_toBottomOf="@+id/btnRed" />
+
+    <Button
+        android:id="@+id/btnYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/yellow"
+        android:onClick="handleColorButtonClick"
+        android:tag="yellow"
+        android:text="@string/yellow"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvHeader"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/tvHeader"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+    <Button
+        android:id="@+id/btnRed"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/red"
+        android:onClick="handleColorButtonClick"
+        android:tag="red"
+        android:text="@string/red"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnYellow"
+        app:layout_constraintStart_toStartOf="@+id/btnYellow"
+        app:layout_constraintTop_toBottomOf="@+id/btnYellow" />
+
+    <Button
+        android:id="@+id/btnPurple"
+        android:backgroundTint="@color/purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="handleColorButtonClick"
+        android:tag="purple"
+        android:text="@string/purple"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnGreen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnGreen"
+        app:layout_constraintTop_toBottomOf="@+id/btnGreen" />
+
+    <Button
+        android:backgroundTint="@color/black"
+        android:id="@+id/btnBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="handleColorButtonClick"
+        android:tag="black"
+        android:text="@string/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnPurple"
+        app:layout_constraintStart_toStartOf="@+id/btnPurple"
+        app:layout_constraintTop_toBottomOf="@+id/btnPurple" />
+</androidx.constraintlayout.widget.ConstraintLayout>
